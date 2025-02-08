@@ -36,6 +36,6 @@ Alternatively, you can create a new directory for your custom scripts and add it
    ```   
 ### 2. **Run the script**
 Once the script is added to your PATH, open a terminal and run the following command to create a new Python project:
-  ```
-  create_py
-  ```
+   ```
+   create_py
+   ```

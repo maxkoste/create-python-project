@@ -8,7 +8,7 @@ This script helps automate the creation of new Python projects on macOS. It sets
 - Creates and sets up virtual environments.
 - Opens the created project in an IDE, currently configured to open Zed (optional: see create_py.py for instructions on how to change it to VScode or whatever IDE you're using!)
 
-## Usage
+## Installation:
 
 ### 1. **Clone the Repository**
 

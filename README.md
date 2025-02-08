@@ -18,6 +18,7 @@ To run the `create_py` script from anywhere on your system, you need to place it
 Alternatively, you can create a new directory for your custom scripts and add it to your `PATH`. For example:
 
 1. Create a new directory for your scripts:
+   
    ```
    mkdir -p $HOME/create-python-project
    ```

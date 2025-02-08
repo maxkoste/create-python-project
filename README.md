@@ -20,11 +20,11 @@ Alternatively, you can create a new directory for your custom scripts and add it
 1. Create a new directory for your scripts:
    ```
    mkdir -p $HOME/create-python-project
-   
+   ```
 2.	Move the create_py script to that directory:
     ```
     mv /usr/local/bin/create_py $HOME/create-python-project/create_py
-
+    ```
 3.	Update your PATH by adding the following line to your ~/.zshrc (or ~/.bash_profile if you use bash):
    ```
    export PATH=$PATH:$HOME/create-python-project

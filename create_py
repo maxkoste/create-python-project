@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+
+import subprocess
+import os
+
+def createProject():
+
+    PROJECTS_DIR = os.path.expanduser("~/ideaProjects/Python_projects")  # the path to your python projects
+
+    os.chdir(PROJECTS_DIR)
+
+    input_name = input("Type the project name: ")
+
+
+    venv_command = "python3 -m venv .venv"
+    source_command = "source .venv/bin/activate"
+
+    subprocess.run(["mkdir", input_name])
+
+    os.chdir(input_name)
+    s = subprocess.getstatusoutput(venv_command)
+    if s[0] == 0:
+           print("Venv created!")
+    else:
+        print("venv couldnt be created!")
+    s2 = subprocess.getstatusoutput(source_command)
+    if s2[0] == 0:
+        print("project activated")
+    else:
+        print("project failed to be activated")
+
+    try:
+        with open("main.py", "w") as f:
+            f.write("print('Hello brotha!')\n")
+            print("main.py created")
+    except Exception as e:
+        print("An error occured: ", e)
+        return
+
+    open_project = input("Would you like to open the project? y/n\n").strip().lower()
+    if open_project == "y":
+        #Specify to open the IDE of your choice. example with VSCode subprocess.run(["code", "main.py"])
+        subprocess.run(["zed", "main.py"]) 
+
+
+if __name__ == "__main__":
+    createProject()

@@ -9,7 +9,7 @@ This script helps automate the creation of new Python projects on macOS. It sets
 
 ## Usage
 
-### 1. **Place the Script in a Directory in Your PATH**
+## 1. **Place the Script in a Directory in Your PATH**
 
 To run the `create_py` script from anywhere on your system, you need to place it in a directory that’s in your `PATH`.
 
@@ -35,7 +35,7 @@ Alternatively, you can create a new directory for your custom scripts and add it
    source ~/.zshrc  # for Zsh users
    source ~/.bash_profile  # for Bash users
    ```   
-### 2. **Run the script**
+## 2. **Run the script**
 Once the script is added to your PATH, open a terminal and run the following command to create a new Python project:
    ```
    create_py

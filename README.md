@@ -5,11 +5,19 @@ This script helps automate the creation of new Python projects on macOS. It sets
 ## Features
 
 - Sets up a basic Python project structure.
-- Creates virtual environments (optional, can be configured in the scrip).
+- Creates virtual environments (optional).
 
 ## Usage
 
-### 1. **Place the Script in a Directory in Your PATH**
+### 1. **Clone the Repository**
+
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/maxkoste/create-python-project.git
+```
+
+### 2. **Place the Script in a Directory in Your PATH**
 
 To run the `create_py` script from anywhere on your system, you need to place it in a directory that’s in your `PATH`.
 
@@ -17,14 +25,14 @@ To run the `create_py` script from anywhere on your system, you need to place it
 
 Alternatively, you can create a new directory for your custom scripts and add it to your `PATH`. For example:
 
-1. Create a new directory for your scripts:   
+1. Create a new directory for your scripts:
    ```bash
    mkdir -p $HOME/create-python-project
    ```
 
 2. Move the `create_py` script to that directory:
    ```bash
-   mv /usr/local/bin/create_py $HOME/create-python-project/create_py
+   mv ~/create-python-project/create_py $HOME/create-python-project/create_py
    ```
 
 3. Update your `PATH` by adding the following line to your `~/.zshrc` (or `~/.bash_profile` if you use Bash):
@@ -38,7 +46,7 @@ Alternatively, you can create a new directory for your custom scripts and add it
    source ~/.bash_profile  # for Bash users
    ```
 
-### 2. **Run the Script**
+### 3. **Run the Script**
 
 Once the script is added to your `PATH`, open a terminal and run the following command to create a new Python project:
 
@@ -46,7 +54,7 @@ Once the script is added to your `PATH`, open a terminal and run the following c
 create_py
 ```
 
-### 3. **Example Output:**
+### 4. **Example Output:**
 
 ```bash
 maxkoste:~ % create_py

@@ -18,9 +18,9 @@ First, clone the repository to your local machine:
 git clone https://github.com/maxkoste/create-python-project.git
 ```
 ### 2. **Open the create_py.py file**
-in order to specify the correct path for your python projects change line 8 in create_py.py to reflect the correct path on your machine:
+In order to specify the correct path for your python projects change line 8 in create_py.py:
    ```
-   PROJECTS_DIR = os.path.expanduser("~/your-path-here/Python_projects")  # the path to your python projects
+   PROJECTS_DIR = os.path.expanduser("~/your-path-here/project-folder")  # the path to your python projects
    ```
 
 ### 3. **Place the Script in a Directory in Your PATH**

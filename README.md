@@ -40,3 +40,14 @@ Once the script is added to your PATH, open a terminal and run the following com
    ```
    create_py
    ```
+
+## 3. **Example output:**
+   ```
+   maxkoste:~ % create_py
+   Type the project name: cool_project
+   Venv created!
+   project activated
+   main.py created
+   Would you like to open the project? y/n
+   y
+   ```

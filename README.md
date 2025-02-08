@@ -17,8 +17,13 @@ First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/maxkoste/create-python-project.git
 ```
+### 2. **Open the create_py.py file**
+in order to specify the correct path for your python projects change line 8 in create_py.py to reflect the correct path on your machine:
+   ```
+   PROJECTS_DIR = os.path.expanduser("~/your-path-here/Python_projects")  # the path to your python projects
+   ```
 
-### 2. **Place the Script in a Directory in Your PATH**
+### 3. **Place the Script in a Directory in Your PATH**
 
 To run the `create_py` script from anywhere on your system, you need to place it in a directory that’s in your `PATH`.
 
@@ -47,7 +52,7 @@ Alternatively, you can create a new directory for your custom scripts and add it
    source ~/.bash_profile  # for Bash users
    ```
 
-### 3. **Run the Script**
+### 4. **Run the Script**
 
 Once the script is added to your `PATH`, open a terminal and run the following command to create a new Python project:
 
@@ -55,7 +60,7 @@ Once the script is added to your `PATH`, open a terminal and run the following c
 create_py
 ```
 
-### 4. **Example Output:**
+### 5. **Example Output:**
 
 ```bash
 maxkoste:~ % create_py

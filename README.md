@@ -5,7 +5,7 @@ This script helps automate the creation of new Python projects on macOS. It sets
 ## Features
 
 - Sets up a basic Python project structure.
-- Creates virtual environments (optional).
+- Creates virtual environments (optional, can be configured in the scrip).
 
 ## Usage
 
